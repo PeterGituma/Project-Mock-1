@@ -25,7 +25,7 @@
   {"id":"chmod-recursive","title":"Set permissions recursive","category":"permissions","description":"Make files executable","command":"chmod -R 755 ./scripts","tags":["chmod","permissions"]},
   {"id":"crontab-e","title":"Edit crontab","category":"cron","description":"Open crontab for editing","command":"crontab -e","tags":["cron","schedule"]},
   {"id":"docker-compose-up","title":"Docker Compose up","category":"docker-compose","description":"Bring up compose services in background","command":"docker-compose up -d --build","tags":["docker-compose","compose"]},
-  {"id":"find-exec","title":"Find and exec","category":"linux","description":"Find files and run command for each","command":"find . -type f -name \"*.log\" -exec gzip {} \;","tags":["find","exec"]},
+  {"id":"find-exec","title":"Find and exec","category":"linux","description":"Find files and run command for each","command":"find . -type f -name \"*.log\" -exec gzip {} \\;","tags":["find","exec"]},
   {"id":"iptables-list","title":"List iptables rules","category":"networking","description":"Show IPv4 filter table rules","command":"sudo iptables -L -n -v","tags":["iptables","firewall"]},
   {"id":"scp-recursive","title":"Recursive scp","category":"ssh","description":"Copy directory recursively with scp","command":"scp -r ./site user@server:/var/www/site","tags":["ssh","scp"]},
   {"id":"top-sort-cpu","title":"Top sort by CPU","category":"linux","description":"Interactive top sorted by CPU","command":"top -o %CPU","tags":["top","monitoring"]},
@@ -35,6 +35,6 @@
   {"id":"npm-run-script","title":"Run npm script","category":"npm","description":"Run a script defined in package.json","command":"npm run build","tags":["npm","script"]},
   {"id":"ssh-tunnel","title":"Create SSH tunnel","category":"ssh","description":"Local port forward to remote service","command":"ssh -L 8080:localhost:80 user@remote","tags":["ssh","tunnel"]},
   {"id":"grep-files-with-line","title":"Grep with filename and number","category":"linux","description":"Show filename and line numbers for matches","command":"grep -nH \"pattern\" **/*.py","tags":["grep","search"]},
-  {"id":"sed-multi-line","title":"Sed multi-line insert","category":"linux","description":"Insert lines after match using sed","command":"sed -n '\''1,${p}p' file","tags":["sed","advanced"]},
+  {"id":"sed-multi-line","title":"Sed multi-line insert","category":"linux","description":"Insert lines after match using sed","command":"sed -n '1,${p}p' file","tags":["sed","advanced"]},
   {"id":"systemctl-enable","title":"Enable service at boot","category":"systemd","description":"Enable and start a systemd service","command":"sudo systemctl enable --now myservice","tags":["systemd","enable"]}
 ]
